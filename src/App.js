@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavigationHeader from './header';
+import SideDrawer from "./SideDrawer";
+import Cards from "./Cards";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="headerNav">
+                <NavigationHeader/>
+            </div>
+            <div className="sideNav">
+                <SideDrawer/>
+            </div>
+            <div id="wrapper" className="wrapper">
+                <div className="box0">
+                    1
+                    <Cards/>
+                </div>
+            </div>
+            <div id="wrapper" className="wrapper">
+                <div className="box1">
+                    2
+                    <Cards/>
+                </div>
+            </div>
+            <div id="wrapper" className="wrapper">
+                <div className="box1">
+                    3
+                    <Cards/>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
