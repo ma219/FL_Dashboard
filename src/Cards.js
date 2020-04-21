@@ -1,16 +1,15 @@
 import './App';
 import React from "react";
 
-class Cards extends React.Component {
-    render() {
-       return (
-           <div className="cardLayout">
-               <div className="mdc-card">
-                   <div className="mdc-card__primary-action" tabIndex="0">
-                   </div>
-               </div>
-           </div>
-       )
-    }
+/*
+The purpose of the Cards component is to hold the figures/graphs
+ */
+function Cards(props) {
+    return (
+        <div className="mdc-card">
+            <p> This is a card that will hold graphs and figures</p>
+        </div>
+    );
 }
+
 export default Cards;

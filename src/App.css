@@ -1,8 +1,10 @@
-.App {
-  text-align: left;
+:root {
+  --kai-orange: #feae5c;
+  --fdot-blue: #1a2c3f;
 }
+
 .headerNavigation {
-  --mdc-theme-primary: #1F4283;
+  --mdc-theme-primary: var(--fdot-blue);
 }
 .mdc-drawer__title {
   text-align: center;
@@ -11,30 +13,23 @@
   position: fixed; /* keeps the sideNav from scrolling with page */
   height: 100%; /* sidenav takes up entire height of page */
 }
+
+.mdc-list-item:hover { /* sets the hover color of the sidenav button color */
+  background-color: var(--kai-orange);
+}
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  /*background-color: #61dafb;*/
+  background-color: #61dafb;
   width: calc(100% - 256px);
-  height: calc(100% - 64px);
+  height: 100%;
   float: right;
 }
 
-.wrapper .box0 {
-  background-color: whitesmoke;
-  width: available;   /*cards take up width of the wrapper */
-  margin: 15px; /*15px space between card and all other elements */
-  text-align: center; /* alignment of text within the card */
-  line-height: 450px; /* the height of the card */
-  font-size: 35px; /* size of font within the card */
-  border: lightgray 1px solid;
-}
-.wrapper .box1 {
-  background-color: #b53b3b;
-  width: available;   /*cards take up width of  */
-  margin: 15px;
-  text-align: center;
-  line-height: 450px;
-  font-size: 30px;
-  display: inline-block;
+.mdc-card {
+  background-color: #5c7ffe;
+  height: 200px;
+  width: 70%;
+  margin: auto;
+  border: red 2px solid;
+  display: flex;
+  position: relative;
 }
